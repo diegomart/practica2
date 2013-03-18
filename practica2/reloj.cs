@@ -1,11 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
+using System.Threading;
 using System.Text;
 
-namespace Project1
+namespace principal
 {
-    class reloj
+    public class reloj
     {
+
+        private void iniciarReloj()
+        {
+
+            Console.WriteLine("Reloj iniciciado");
+
+
+            for (; ; )
+            {
+                Console.Clear();
+                Console.WriteLine(DateTime.Now);
+                Thread.Sleep(1000);
+            }
+        }
     }
 }
